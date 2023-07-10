@@ -7,9 +7,9 @@ namespace ExcelTest.Models
     {
         [Key]
         public int Id { get; set; }
-        public string Name { get; set; }
+        public string DiseasesName { get; set; }
 
-        public static List<DiseasesInformation> GetDiseaseList()
+        /*public static List<DiseasesInformation> GetDiseaseList()
         {
             List<DiseasesInformation> diseases = new List<DiseasesInformation>
         {
@@ -23,7 +23,7 @@ namespace ExcelTest.Models
         };
 
             return diseases;
-        }
+        }*/
 
         public DEnums Enums { get; set; }
     }
