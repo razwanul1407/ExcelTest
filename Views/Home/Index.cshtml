@@ -1,0 +1,138 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+<style>
+
+    .form-group.required .control-label:after {
+        content: "*";
+        color: red;
+    }
+
+</style>
+
+<div class="container-fluid ">
+    <h1 class="text-center text-primary"> UI DESIGN </h1>
+
+    <br />
+    <div class=" container border border-primary">
+        <br>
+
+        <form class="form-horizontal">
+            <div class="form-group required">
+                <label class="control-label col-sm-2" for="patient">Patient Name</label>
+                <div class="col-sm-10">
+                    <input type="patient" class="form-control" id="patient">
+                </div>
+            </div>
+            <div class="form-group required">
+                <label class="control-label col-sm-2" for="diseases">Diseases Name</label>
+                <div class="col-sm-10">
+                    <!--  <input type="diseases" class="form-control" id="diseases"> -->
+                    <select class="form-select form-control" type="diseases" id="diseases" aria-label="Default select example">
+                        <option selected></option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="form-group required">
+                <label class="control-label col-sm-2" for="Epilepsy">Epilepsy</label>
+                <div class="col-sm-10">
+                    <!-- <input type="Epilepsy" class="form-control" id="Epilepsy">  -->
+
+                    <select class="form-select form-control" type="Epilepsy" id="Epilepsy" aria-label="Default select example">
+                        <option selected>Yes</option>
+                        <option value="1">No</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="form-group required">
+                <label class="control-label col-sm-2" for="Epilepsy">Other NCDs</label>
+                <div class="col-sm-3">
+
+                    <select class="form-select" multiple aria-label="multiple select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+
+                <div class="col-sm-3">
+
+                    <div class="btn-group-vertical" role="group"
+                         aria-label="Basic outlined example">
+                        <button type="button" class="btn btn-outline-secondary">Add<i class="las la-angle-right"></i></button><br>
+
+                        <button type="button" class="btn btn-outline-secondary"><i class="las la-angle-left"></i>Remove</button>
+                    </div>
+
+                </div>
+
+                <div class=" col-sm-3 d-inline">
+                    <select class="form-select" multiple aria-label="multiple select example">
+                        <option selected></option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                    </select>
+                </div>
+            </div>
+
+
+
+            <div class="form-group required">
+                <label class="control-label col-sm-2" for="Epilepsy">Allergies</label>
+                <div class="col-sm-3">
+
+                    <select class="form-select" multiple aria-label="multiple select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+
+                <div class="col-sm-3">
+
+                    <div class="btn-group-vertical" role="group"
+                         aria-label="Basic outlined example">
+                        <button type="button" class="btn btn-outline-secondary">Add<i class="las la-angle-right"></i></button><br>
+
+                        <button type="button" class="btn btn-outline-secondary"><i class="las la-angle-left"></i>Remove</button>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-3 d-inline">
+                    <select class="form-select" multiple aria-label="multiple select example">
+                        <option selected></option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="form-group ">
+                <div class=" mt-3 col-sm-offset-6 ">
+                    <button type="submit" class="btn btn-primary ">Save</button>
+                </div>
+            </div>
+
+
+        </form>
+    </div>
+</div>
