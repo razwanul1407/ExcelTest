@@ -18,7 +18,6 @@ namespace ExcelTest.Controllers
 
         public IActionResult Index()
         {
-            var profile = _db.Patients.Add(Patients entity)
             return View();
         }
 
